@@ -70,7 +70,7 @@ jobs:
       uses: actions/upload-artifact@v2.3.1
       with:
         # Artifact name
-        name: Bin
+        name: Bin-${{runner.os}}
         # A file, directory or wildcard pattern that describes what to upload
         path: build/bin
         # The desired behavior if no files are found using the provided path.
